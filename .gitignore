@@ -1,1 +1,10 @@
 /dist/
+/build/
+/venv/
+.cache
+.vscode/
+.DS_store
+env/
+.idea
+.env*
+**/venv

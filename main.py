@@ -37,9 +37,11 @@ def convert_all(path):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description='Debes de tener los archivo .png en la carpeta indicada, puedes tener subcarpetas con mas archivos .png',
+        description='Debes de tener los archivo .png en la carpeta indicada, puedes tener subcarpetas con mas '
+                    'archivos .png',
         usage='"python %(prog)s path"')
     parser.add_argument("path", type=str,
-                        help="Ruta del directorio que contiene las imágenes banner.png y banner-center.png o subcarpetas con las imagenes")
+                        help='Ruta del directorio que contiene las imágenes banner.png y banner-center.png o '
+                             'subcarpetas con las imagenes')
     args = parser.parse_args()
     convert_all(args.path)
